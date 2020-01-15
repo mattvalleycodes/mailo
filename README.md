@@ -41,7 +41,10 @@ Mailo commands with a set of commands to improve your development expeirence.
 
 
 ## Deployed version of Mailo
-A deployed version of Mailo is availabla via `https://mailo-app.herokuapp.com/`
+A deployed version of Mailo is availabla via `https://mailo-app.herokuapp.com/`. The deployed version of Mailo uses free plans for both SendGrid and Mailgun which comes with a few limitations:
+
+ - SendGrid does not allow free plans to send more than 100 emails a month.
+ - MailGun limits sandbox accounts to send emails to verifed email addresses. hi@mv.id.au, hi+to1@mv.id.au, hi+cc1@mv.id.au, hi+bcc1@mv.id.au and hi+cc2@mv.id.au are currently verified.
 
 ## Postman
 
