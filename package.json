@@ -1,0 +1,37 @@
+{
+  "name": "mailo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js | pino-pretty",
+    "start:watch": "nodemon src/app.js | pino-pretty",
+    "lint": "eslint src/*.js",
+    "test": "MAILO_PROVIDERS_DEFAULT=SENDGRID MAILO_SENDGRID_TOKEN=SENDGRID_TOKEN MAILO_MAILGUN_TOKEN=MAILGUN_TOKEN MAILO_MAILGUN_DOMAIN=MAILGUN_DOMAIN mocha src/*.spec.js"
+  },
+  "author": "Matt Valley",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "7.0.0",
+    "nodemon": "2.0.2",
+    "pino-pretty": "^3.5.0",
+    "prettier": "1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "sinon": "^8.0.4"
+  },
+  "dependencies": {
+    "pino": "^5.16.0",
+    "@koa/router": "8.0.5",
+    "form-data": "3.0.0",
+    "got": "10.2.2",
+    "koa": "2.11.0",
+    "koa-bodyparser": "4.2.1"
+  }
+}

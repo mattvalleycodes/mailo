@@ -1,0 +1,41 @@
+{
+  "info": {
+    "_postman_id": "7ca5d6e6-6513-467c-b96a-2a0b18d41948",
+    "name": "Mailo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Send an email",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"from\": \"hi+from@mv.id.au\",\n\t\"to\": [\"hi+to@mv.id.au\", \"hi+to2@mv.id.au\"],\n\t\"subject\": \"Message #1\",\n\t\"body\": \"Content of message #1\",\n\t\"bcc\": [\"hi+bcc1@mv.id.au\", \"hi+bcc2@mv.id.au\"],\n\t\"cc\": [\"hi+cc1@mv.id.au\", \"hi+cc2@mv.id.au\"]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:2021/message",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "2021",
+          "path": ["message"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
