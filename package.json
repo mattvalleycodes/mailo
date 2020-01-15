@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js | pino-pretty",
+    "start": "node src/app.js",
     "start:watch": "nodemon src/app.js | pino-pretty",
     "lint": "eslint src/*.js",
     "test": "MAILO_PROVIDERS_DEFAULT=SENDGRID MAILO_SENDGRID_TOKEN=SENDGRID_TOKEN MAILO_MAILGUN_TOKEN=MAILGUN_TOKEN MAILO_MAILGUN_DOMAIN=MAILGUN_DOMAIN mocha src/*.spec.js"
