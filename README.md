@@ -21,7 +21,7 @@ As mentioned earlier, Mailo works with SendGrid and Mailgun so to get it working
 To run Mailo locally, you need Node v12.6.0. Run the following commands to clone and run Mailo locally:
 
 ```bash
-git clone
+git clone git@github.com:mattvalleycodes/mailo.git
 cd mailo
 npm install
 npm start
@@ -39,6 +39,9 @@ Mailo commands with a set of commands to improve your development expeirence.
 * `npm run lint` checks the codebase against the defined ESLint rules. This command also reminds you if the coding style does not match the "Prettier" configuration.
 
 
+
+## Deployed version of Mailo
+A deployed version of Mailo is availabla via `https://mailo-app.herokuapp.com/`
 
 ## Postman
 
